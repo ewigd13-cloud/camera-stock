@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   const isProd = mode === 'production';
 
   return {
-    base: isProd ? '/camera-test/' : '/',
+    base: isProd ? '/camera-stock/' : '/',
 
     server: {
       port: 3000,
@@ -30,7 +30,7 @@ export default defineConfig(({ mode }) => {
         manifest: {
           name: 'Whiteboard Photo Booth',
           short_name: 'PhotoBooth',
-          start_url: '/camera-test/',
+          start_url: '/camera-stock/',
           display: 'standalone',
           background_color: '#ffffff',
           icons: [
@@ -47,13 +47,13 @@ export default defineConfig(({ mode }) => {
           ],
         },
         workbox: {
-          navigateFallback: '/camera-test/',
+          navigateFallback: '/camera-stock/',
           runtimeCaching: [
             {
-              urlPattern: /^https:\/\/.*\/camera-test\/.*\.(js|css|ttf|png|json)$/,
+              urlPattern: /^https:\/\/.*\/camera-stock\/.*\.(js|css|ttf|png|json)$/,
               handler: 'CacheFirst',
               options: {
-                cacheName: 'camera-test-assets',
+                cacheName: 'camera-stock-assets',
                 expiration: {
                   maxEntries: 50,
                   maxAgeSeconds: 60 * 60 * 24 * 30, // 30日

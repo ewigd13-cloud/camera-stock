@@ -2,7 +2,7 @@ import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { CameraView } from './components/CameraView';
 import { WhiteboardGridInput } from './components/ChalkboardInput';
 import { CameraIcon, TimerIcon, FlashIcon, CloseIcon, GalleryIcon } from './components/Icons';
-import { Gallery } from './components/Gallery';
+import Gallery from './components/Gallery';
 import { initDB, addPhoto } from './db';
 import './index.css';
 
@@ -665,6 +665,8 @@ return (
       </div>
     )}
   </>
-);
+ );
+};
+
 
 export default App;
