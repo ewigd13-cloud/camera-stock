@@ -2,8 +2,8 @@ const CACHE_NAME = 'whiteboard-photo-booth-test-v3';
 const urlsToCache = [
   self.location.origin + '/camera-stock/',
   self.location.origin + '/camera-stock/manifest.json',
-  self.location.origin + '/camera-stock/assets/index-DzaSX9Cw.js',
-  self.location.origin + '/camera-stock/assets/index-b59meHPq.css',
+  self.location.origin + '/camera-stock/assets/index-lcEwDxWB.js',
+  self.location.origin + '/camera-stock/assets/index-CiKC5vLz.css',
   self.location.origin + '/camera-stock/icons/icon-192.png',
   self.location.origin + '/camera-stock/icons/icon-512.png',
   self.location.origin + '/camera-stock/fonts/NotoSerifJP-VariableFont_wght.ttf',
